@@ -7,21 +7,26 @@
   font-family: Arial;
 }
 
+:root {
+  --green: #129490;
+  --violet: rgb(236, 218, 237);
+  --steel: rgb(209, 216, 238);
+}
 body {
   margin-bottom: 100px;
 }
 h1 {
   text-align: center;
   padding: 0.7rem;
-  background-color: #129490;
+  background-color: var(--green);
   color: white;
 }
 
 .question--parent {
   padding: 5rem;
   margin: 2rem;
-  background-color: wheat;
-  border: 2px solid #129490;
+  background-color: var(--violet);
+  border: 2px solid var(--green);
   text-align: center;
   position: relative;
 }
@@ -38,7 +43,7 @@ h1 {
 }
 
 .tagged {
-  color: #129490;
+  color: var(--green);
 }
 
 .answer {
@@ -51,21 +56,22 @@ h1 {
 }
 
 button {
-  color: grey;
+  color: var(--green);
   background-color: white;
-  border: 1px solid #129490;
+  border: 1px solid var(--green);
   padding: 2px;
   border-radius: 7%;
 }
 
 button:hover {
-  color: #129490;
+  color: white;
+  background-color: var(--green);
   font-weight: bold;
   cursor: pointer;
 }
 
 footer {
-  background-color: rgb(181, 181, 181);
+  background-color: var(--green);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -80,7 +86,7 @@ footer ul {
 
 .nav {
   font-size: 50px;
-  color: #129490;
+  color: white;
 }
 
 .nav:hover {
