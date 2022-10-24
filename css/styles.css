@@ -56,18 +56,17 @@ h1 {
 }
 
 button {
-  color: var(--green);
-  background-color: white;
+  color: white;
+  background-color: var(--green);
   border: 1px solid var(--green);
-  padding: 2px;
+  padding: 7px;
   border-radius: 7%;
 }
 
 button:hover {
-  color: white;
-  background-color: var(--green);
   font-weight: bold;
   cursor: pointer;
+  padding: 10px;
 }
 
 footer {
@@ -92,4 +91,11 @@ footer ul {
 .nav:hover {
   font-weight: bold;
   cursor: pointer;
+}
+
+.current {
+  color: var(--violet);
+  border: 1px solid var(--violet);
+  border-radius: 30%;
+  padding: 0 0.7rem 0 0.7rem;
 }
