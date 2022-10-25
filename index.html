@@ -16,34 +16,34 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="question--parent">
+      <section class="quiz-card">
         <p class="bookmark untagged">&#10047;</p>
-        <p class="question">What is the universal selector?</p>
-        <button>show answer</button>
+        <p class="quiz-card__question">What is the universal selector?</p>
+        <button class="quiz-card__button-show">show answer</button>
         <div class="quiz-card__tag">
           <p class="quiz-card__tag-css">#css</p>
           <p class="quiz-card__tag-basics">#basics</p>
         </div>
       </section>
 
-      <section class="question--parent">
+      <section class="quiz-card">
         <p class="bookmark untagged">&#10047;</p>
-        <p class="question">What is the universal selector?</p>
+        <p class="quiz-card__question">What is the universal selector?</p>
 
-        <button>hide answer</button>
-        <p class="answer">It's "*"!</p>
+        <button class="quiz-card__button-hide">hide answer</button>
+        <p class="quiz-card__answer">It's "*"!</p>
         <div class="quiz-card__tag">
           <p class="quiz-card__tag-css">#css</p>
           <p class="quiz-card__tag-basics">#basics</p>
         </div>
       </section>
 
-      <section class="question--parent">
+      <section class="quiz-card">
         <p class="bookmark tagged">&#10047;</p>
-        <p class="question">What is the universal selector?</p>
+        <p class="quiz-card__question">What is the universal selector?</p>
 
-        <button>hide answer</button>
-        <p class="answer">It's "*"!</p>
+        <button class="quiz-card__button-hide">hide answer</button>
+        <p class="quiz-card__answer">It's "*"!</p>
         <div class="quiz-card__tag">
           <p class="quiz-card__tag-css">#css</p>
           <p class="quiz-card__tag-basics">#basics</p>
@@ -53,9 +53,15 @@
 
     <footer>
       <ul type="none">
-        <li class="nav home current"><a href="./index.html">&#10753;</a></li>
-        <li class="nav fave"><a href="./bookmarks.html">&#10047;</a></li>
-        <li class="nav profile"><a href="./profile.html">&#10752;</a></li>
+        <li class="navigation__home navigation__current">
+          <a href="./index.html">&#10753;</a>
+        </li>
+        <li class="navigation__bookmark-page">
+          <a href="./bookmarks.html">&#10047;</a>
+        </li>
+        <li class="navigation__profile">
+          <a href="./profile.html">&#10752;</a>
+        </li>
       </ul>
     </footer>
   </body>

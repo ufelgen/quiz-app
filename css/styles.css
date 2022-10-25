@@ -24,7 +24,7 @@ h1 {
   height: 100%;
 }
 
-.question--parent {
+.quiz-card {
   padding: 5rem;
   margin: 2rem;
   background-color: var(--violet);
@@ -66,16 +66,17 @@ h1 {
   color: var(--green);
 }
 
-.answer {
+.quiz-card__answer {
   font-weight: bold;
   padding: 10px;
 }
 
-.question {
+.quiz-card__question {
   padding: 10px;
 }
 
-button {
+.quiz-card__button-show,
+.quiz-card__button-hide {
   color: white;
   background-color: var(--green);
   border: 1px solid var(--green);
@@ -83,7 +84,8 @@ button {
   border-radius: 7%;
 }
 
-button:hover {
+.quiz-card__button-show:hover,
+.quiz-card__button-hide:hover {
   font-weight: bold;
   cursor: pointer;
   padding: 10px;
@@ -110,17 +112,21 @@ li a {
   color: inherit;
 }
 
-.nav {
+.navigation__home,
+.navigation__bookmark-page,
+.navigation__profile {
   font-size: 50px;
   color: white;
 }
 
-.nav:hover {
+.navigation__home:hover,
+.navigation__bookmark-page:hover,
+.navigation__profile:hover {
   font-weight: bold;
   cursor: pointer;
 }
 
-.current {
+.navigation__current {
   color: var(--violet);
   border: 1px solid var(--violet);
   border-radius: 30%;
