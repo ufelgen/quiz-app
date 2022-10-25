@@ -20,6 +20,8 @@ h1 {
   padding: 0.7rem;
   background-color: var(--green);
   color: white;
+  font-size: 50px;
+  height: 100%;
 }
 
 .question--parent {
@@ -83,6 +85,11 @@ footer ul {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav {
