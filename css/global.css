@@ -1,0 +1,17 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+:root {
+  --green: #129490;
+  --violet: rgb(236, 218, 237);
+  --steel: rgb(209, 216, 238);
+}
+body {
+  margin-bottom: 100px;
+}
