@@ -11,7 +11,7 @@
       src="https://kit.fontawesome.com/df46452064.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/bookmarks.js" defer></script>
   </head>
 
   <body>
@@ -20,13 +20,21 @@
     </header>
     <main>
       <section class="quiz-card">
-        <p class="bookmark tagged">&#10047;</p>
-        <p class="quiz-card__question">What is the universal selector?</p>
+        <button type="button" class="bookmark" data-js="bookmark-2b">
+          <i class="fa-solid fa-bookmark"></i>
+        </button>
+        <p class="quiz-card__question">
+          What is a button tag's default type attribute?
+        </p>
 
-        <button class="quiz-card__button-hide">hide answer</button>
-        <p class="quiz-card__answer">It's "*"!</p>
+        <button class="quiz-card__button" data-js="quiz-card__button-2b">
+          show answer
+        </button>
+        <p class="quiz-card__answer" data-js="quiz-card__answer-2b">
+          It's type="submit" !
+        </p>
         <div class="quiz-card__tag">
-          <p class="quiz-card__tag-css">#css</p>
+          <p class="quiz-card__tag-html">#html</p>
           <p class="quiz-card__tag-basics">#basics</p>
         </div>
       </section>
