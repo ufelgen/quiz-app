@@ -24,20 +24,19 @@ footer .navigation {
 .navigation__home,
 .navigation__bookmark-page,
 .navigation__profile {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
+  padding: 7px;
 }
 
 .navigation__home:hover,
 .navigation__bookmark-page:hover,
 .navigation__profile:hover {
-  font-weight: bold;
   cursor: pointer;
 }
 
 .navigation__current {
   color: var(--violet);
-  border: 1px solid var(--violet);
   border-radius: 30%;
   padding: 0 0.7rem 0 0.7rem;
 }
