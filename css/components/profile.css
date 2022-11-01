@@ -64,10 +64,24 @@ div i {
 
 .settings {
   grid-area: sett;
+  padding-left: 7px;
+  margin-top: 50px;
 }
 
 .switch-text {
   grid-area: text;
+  padding-left: 7px;
+  margin-top: 7px;
+}
+
+/* classes for dark mode */
+.dark-body {
+  background-color: black;
+}
+
+.dark-content {
+  background-color: black;
+  color: var(--violet);
 }
 
 /* slider reference: https://www.w3schools.com/howto/howto_css_switch.asp */

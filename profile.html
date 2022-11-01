@@ -11,15 +11,15 @@
       src="https://kit.fontawesome.com/df46452064.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="./js/profile.js"></script>
+    <script type="text/javascript" src="./js/profile.js" defer></script>
   </head>
 
-  <body>
+  <body data-js="dark-body">
     <header>
       <h1>Your Profile</h1>
     </header>
     <main>
-      <section class="profile">
+      <section class="profile" data-js="dark-content">
         <div class="profile-pic"><i class="fa-solid fa-hippo"></i></div>
         <h2 class="name">Happy Hippo</h2>
         <section class="about">
@@ -42,7 +42,7 @@
         <p class="switch-text">switch to dark mode</p>
         <div>
           <label class="switch">
-            <input type="checkbox" />
+            <input type="checkbox" data-js="dark-mode" />
             <span class="slider round"></span>
           </label>
         </div>
