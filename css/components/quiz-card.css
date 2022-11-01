@@ -3,9 +3,9 @@
   margin: 2rem;
   background-color: var(--violet);
   border: 2px solid var(--green);
-  border-radius: 7%;
   text-align: center;
   position: relative;
+  font-family: Arial;
 }
 
 .quiz-card__tag {
@@ -19,7 +19,9 @@
 }
 
 .quiz-card__tag-css,
-.quiz-card__tag-basics {
+.quiz-card__tag-basics,
+.quiz-card__tag-js,
+.quiz-card__tag-html {
   border: 1px solid var(--green);
   padding: 3px;
   border-radius: 10%;
@@ -31,27 +33,33 @@
   top: -18px;
   right: 10%;
   font-size: 2.5rem;
+  color: grey;
 }
 
-.untagged {
-  color: grey;
+.bookmark:hover {
+  cursor: pointer;
 }
 
 .tagged {
   color: var(--green);
 }
 
+button.bookmark {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .quiz-card__answer {
   font-weight: bold;
   padding: 10px;
+  color: var(--violet);
 }
 
 .quiz-card__question {
   padding: 10px;
 }
 
-.quiz-card__button-show,
-.quiz-card__button-hide {
+.quiz-card__button {
   color: white;
   background-color: var(--green);
   border: 1px solid var(--green);
@@ -59,9 +67,13 @@
   border-radius: 7%;
 }
 
-.quiz-card__button-show:hover,
-.quiz-card__button-hide:hover {
+.quiz-card__button:hover,
+.quiz-card__button:hover {
   font-weight: bold;
   cursor: pointer;
   padding: 10px;
+}
+
+.hidden {
+  color: var(--green);
 }

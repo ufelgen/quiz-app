@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Personal Website of Ulrike Felgenhauer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/df46452064.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/profile.js" defer></script>
+  </head>
+
+  <body data-js="dark-body">
+    <header>
+      <h1>Your Profile</h1>
+    </header>
+    <main>
+      <section class="profile" data-js="dark-content">
+        <div class="profile-pic"><i class="fa-solid fa-hippo"></i></div>
+        <h2 class="name">Happy Hippo</h2>
+        <section class="about">
+          <h3>About me</h3>
+          <p>
+            I am very happy and very hungry. My favourite hobby is learning
+            things on this lovely quiz app, which I can access even though I
+            have no hands! #a11y4ever
+          </p>
+        </section>
+        <div class="question-counter">
+          <i class="fa-solid fa-clipboard-question"></i>
+          <p>questions contributed: 43</p>
+        </div>
+        <div class="bookmark-counter">
+          <i class="fa-solid fa-bookmark"></i>
+          <p>questions bookmarked: 77</p>
+        </div>
+        <h3 class="settings">Settings</h3>
+        <p class="switch-text">switch to dark mode</p>
+        <div>
+          <label class="switch">
+            <input type="checkbox" data-js="dark-mode" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul type="none" class="navigation">
+        <li class="navigation__home">
+          <a href="./index.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li class="navigation__bookmark-page">
+          <a href="./bookmarks.html"><i class="fa-regular fa-bookmark"></i></a>
+        </li>
+        <li class="navigation__profile navigation__current">
+          <a href="./profile.html">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

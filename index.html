@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <!-- link to JS
-    <script type="text/javascript" src="/code.js"></script>
-  --></head>
+    <script
+      src="https://kit.fontawesome.com/df46452064.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/index.js" defer></script>
+  </head>
 
   <body>
     <header>
@@ -17,9 +20,14 @@
     </header>
     <main>
       <section class="quiz-card">
-        <p class="bookmark untagged">&#10047;</p>
+        <button type="button" class="bookmark" data-js="bookmark-1">
+          <i class="fa-solid fa-bookmark"></i>
+        </button>
         <p class="quiz-card__question">What is the universal selector?</p>
-        <button class="quiz-card__button-show">show answer</button>
+        <button class="quiz-card__button" data-js="quiz-card__button-1">
+          show answer
+        </button>
+        <p class="quiz-card__answer" data-js="quiz-card__answer-1">It's * !</p>
         <div class="quiz-card__tag">
           <p class="quiz-card__tag-css">#css</p>
           <p class="quiz-card__tag-basics">#basics</p>
@@ -27,25 +35,41 @@
       </section>
 
       <section class="quiz-card">
-        <p class="bookmark untagged">&#10047;</p>
-        <p class="quiz-card__question">What is the universal selector?</p>
+        <button type="button" class="bookmark" data-js="bookmark-2">
+          <i class="fa-solid fa-bookmark"></i>
+        </button>
+        <p class="quiz-card__question">
+          What is a button tag's default type attribute?
+        </p>
 
-        <button class="quiz-card__button-hide">hide answer</button>
-        <p class="quiz-card__answer">It's "*"!</p>
+        <button class="quiz-card__button" data-js="quiz-card__button-2">
+          show answer
+        </button>
+        <p class="quiz-card__answer" data-js="quiz-card__answer-2">
+          It's type="submit" !
+        </p>
         <div class="quiz-card__tag">
-          <p class="quiz-card__tag-css">#css</p>
+          <p class="quiz-card__tag-html">#html</p>
           <p class="quiz-card__tag-basics">#basics</p>
         </div>
       </section>
 
       <section class="quiz-card">
-        <p class="bookmark tagged">&#10047;</p>
-        <p class="quiz-card__question">What is the universal selector?</p>
+        <button type="button" class="bookmark" data-js="bookmark-3">
+          <i class="fa-solid fa-bookmark"></i>
+        </button>
+        <p class="quiz-card__question">
+          How can you define variables in JavaScript?
+        </p>
 
-        <button class="quiz-card__button-hide">hide answer</button>
-        <p class="quiz-card__answer">It's "*"!</p>
+        <button class="quiz-card__button" data-js="quiz-card__button-3">
+          show answer
+        </button>
+        <p class="quiz-card__answer" data-js="quiz-card__answer-3">
+          Using 'const' or 'let' !
+        </p>
         <div class="quiz-card__tag">
-          <p class="quiz-card__tag-css">#css</p>
+          <p class="quiz-card__tag-js">#javascript</p>
           <p class="quiz-card__tag-basics">#basics</p>
         </div>
       </section>
@@ -54,13 +78,15 @@
     <footer>
       <ul type="none" class="navigation">
         <li class="navigation__home navigation__current">
-          <a href="./index.html">&#10753;</a>
+          <a href="./index.html"><i class="fa-solid fa-house"></i></a>
         </li>
         <li class="navigation__bookmark-page">
-          <a href="./bookmarks.html">&#10047;</a>
+          <a href="./bookmarks.html"><i class="fa-regular fa-bookmark"></i></a>
         </li>
         <li class="navigation__profile">
-          <a href="./profile.html">&#10752;</a>
+          <a href="./profile.html">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
         </li>
       </ul>
     </footer>
