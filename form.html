@@ -16,10 +16,10 @@
     <header>
       <h1>New Quiz Card</h1>
     </header>
-    <main>
+    <main data-js="main">
       <section class="new-quiz-card">
         <h3>Add your own questions!</h3>
-        <form>
+        <form data-js="new-quiz-card-form">
           <fieldset class="your-input">
             <legend>Question</legend>
             <label for="your-question"
@@ -29,6 +29,7 @@
               id="your-question"
               data-js="your-question"
               rows="5"
+              name="question"
             ></textarea>
           </fieldset>
           <fieldset class="your-input">
@@ -40,22 +41,23 @@
               id="your-answer"
               data-js="your-answer"
               rows="5"
+              name="answer"
             ></textarea>
           </fieldset>
           <fieldset class="your-input">
             <legend>Tag</legend>
-            <label for="your-answer"
+            <label for="your-tag"
               >please select a tag to classify your question</label
             >
             <p>
-              <select name="your-tag" id="your-tag">
+              <select name="tag" id="your-tag" data-js="your-tag">
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
                 <option value="js">JavaScript</option>
               </select>
             </p>
           </fieldset>
-          <button type="submit" data-js="submit-button">
+          <button type="submit" data-js="create-button">
             Create a new Quiz Card
           </button>
         </form>

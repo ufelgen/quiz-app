@@ -37,6 +37,7 @@ form button {
   border: 2px solid var(--green);
   color: var(--green);
   font-weight: bold;
+  transition: ease-in-out 0.5s background-color;
 }
 
 form button:hover {
