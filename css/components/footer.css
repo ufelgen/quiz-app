@@ -41,5 +41,4 @@ footer .navigation {
 .navigation__current {
   color: var(--violet);
   border-radius: 30%;
-  padding: 0 0.7rem 0 0.7rem;
 }
