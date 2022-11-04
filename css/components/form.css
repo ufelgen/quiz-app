@@ -1,0 +1,46 @@
+.new-quiz-card {
+  padding: 1.2rem;
+  margin: 2rem;
+  background-color: var(--violet);
+  border: 2px solid var(--green);
+  /*text-align: center; */
+  position: relative;
+  font-family: Arial;
+}
+
+.your-input {
+  margin-top: 1rem;
+}
+
+fieldset {
+  padding: 0.5rem;
+}
+
+fieldset legend {
+  color: var(--green);
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+form button {
+  width: 100%;
+  padding: 2px;
+  margin-top: 0.5rem;
+  background-color: white;
+  border: 2px solid var(--green);
+  color: var(--green);
+  font-weight: bold;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: var(--green);
+  color: white;
+}
