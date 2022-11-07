@@ -70,3 +70,21 @@ form.addEventListener("submit", (event) => {
     bookmarkNew.classList.toggle("tagged");
   });
 });
+
+// characters left
+const questionCharacters = document.querySelector(
+  '[data-js="question-characters"]'
+);
+const answerCharacters = document.querySelector(
+  '[data-js="answer-characters"]'
+);
+
+questionInput.addEventListener("input", () => {
+  const questionLeft = 150 - Number(questionInput.value.length);
+  questionCharacters.textContent = `${questionLeft} characters left`;
+});
+
+answerInput.addEventListener("input", () => {
+  const answerLeft = 150 - Number(answerInput.value.length);
+  answerCharacters.textContent = `${answerLeft} characters left`;
+});
