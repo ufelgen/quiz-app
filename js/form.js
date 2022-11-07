@@ -44,7 +44,7 @@ form.addEventListener("submit", (event) => {
   newCard.append(newAnswer);
 
   const newDiv = document.createElement("div");
-  newDiv.classList.add("quiz-card__tags");
+  newDiv.classList.add("quiz-card__tag-wrapper");
   newCard.append(newDiv);
 
   const newTag = document.createElement("p");

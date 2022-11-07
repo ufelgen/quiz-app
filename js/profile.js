@@ -15,7 +15,7 @@ darkModeButton.addEventListener("change", (event) => {
   <i class="fa-solid fa-hat-wizard fa-2xs hat"></i>
    `;
     const name = document.querySelector('[data-js="name"]');
-    name.innerHTML = "Sleepy Hippo";
+    name.textContent = "Sleepy Hippo";
   } else {
     darkBody.classList.remove("dark-body");
     darkContent.classList.remove("dark-content");
