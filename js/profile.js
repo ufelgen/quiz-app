@@ -9,8 +9,21 @@ darkModeButton.addEventListener("change", (event) => {
   if (event.target.checked) {
     darkBody.classList.add("dark-body");
     darkContent.classList.add("dark-content");
+    const hippo = document.querySelector('[data-js="profile-pic"]');
+    hippo.innerHTML = `
+  <i class="fa-solid fa-hippo"></i>
+  <i class="fa-solid fa-hat-wizard fa-2xs hat"></i>
+   `;
+    const name = document.querySelector('[data-js="name"]');
+    name.textContent = "Sleepy Hippo";
   } else {
     darkBody.classList.remove("dark-body");
     darkContent.classList.remove("dark-content");
+    const hippo = document.querySelector('[data-js="profile-pic"]');
+    hippo.innerHTML = `
+  <i class="fa-solid fa-hippo"></i>
+   `;
+    const name = document.querySelector('[data-js="name"]');
+    name.innerHTML = "Happy Hippo";
   }
 });

@@ -16,6 +16,7 @@ footer .navigation {
 
 .navigation__home a,
 .navigation__bookmark-page a,
+.navigation__new-card a,
 .navigation__profile a {
   text-decoration: none;
   color: inherit;
@@ -23,6 +24,7 @@ footer .navigation {
 
 .navigation__home,
 .navigation__bookmark-page,
+.navigation__new-card,
 .navigation__profile {
   font-size: 40px;
   color: white;
@@ -31,6 +33,7 @@ footer .navigation {
 
 .navigation__home:hover,
 .navigation__bookmark-page:hover,
+.navigation__new-card,
 .navigation__profile:hover {
   cursor: pointer;
 }
@@ -38,5 +41,4 @@ footer .navigation {
 .navigation__current {
   color: var(--violet);
   border-radius: 30%;
-  padding: 0 0.7rem 0 0.7rem;
 }

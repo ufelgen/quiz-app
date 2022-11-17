@@ -20,8 +20,11 @@
     </header>
     <main>
       <section class="profile" data-js="dark-content">
-        <div class="profile-pic"><i class="fa-solid fa-hippo"></i></div>
-        <h2 class="name">Happy Hippo</h2>
+        <div class="profile-pic" data-js="profile-pic">
+          <i class="fa-solid fa-hippo"></i>
+        </div>
+
+        <h2 class="name" data-js="name">Happy Hippo</h2>
         <section class="about">
           <h3>About me</h3>
           <p>
@@ -38,9 +41,11 @@
           <i class="fa-solid fa-bookmark"></i>
           <p>questions bookmarked: 77</p>
         </div>
+
         <h3 class="settings">Settings</h3>
+        <div class="settings-container"></div>
         <p class="switch-text">switch to dark mode</p>
-        <div>
+        <div class="slider-container">
           <label class="switch">
             <input type="checkbox" data-js="dark-mode" />
             <span class="slider round"></span>
@@ -52,12 +57,13 @@
     <footer>
       <ul type="none" class="navigation">
         <li class="navigation__home">
-          <a href="./index.html">
-            <i class="fa-solid fa-house"></i>
-          </a>
+          <a href="./index.html"><i class="fa-solid fa-house"></i></a>
         </li>
         <li class="navigation__bookmark-page">
           <a href="./bookmarks.html"><i class="fa-regular fa-bookmark"></i></a>
+        </li>
+        <li class="navigation__new-card">
+          <a href="./form.html"><i class="fa-solid fa-square-plus"></i></a>
         </li>
         <li class="navigation__profile navigation__current">
           <a href="./profile.html">

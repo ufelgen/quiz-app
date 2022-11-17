@@ -12,7 +12,7 @@
     "quest quest quest"
     "book book book"
     "sett sett sett"
-    "text text button";
+    "tex tex butt";
 }
 
 .profile-pic {
@@ -28,6 +28,14 @@ div.profile-pic {
   height: 7rem;
   width: 7rem;
   display: flex;
+  position: relative;
+}
+
+.hat {
+  position: absolute;
+  color: white;
+  bottom: 93px;
+  left: 50px;
 }
 
 .name {
@@ -69,9 +77,14 @@ div i {
 }
 
 .switch-text {
-  grid-area: text;
+  grid-area: tex;
   padding-left: 7px;
   margin-top: 7px;
+}
+
+.settings-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* classes for dark mode */
@@ -84,6 +97,9 @@ div i {
   color: var(--violet);
 }
 
+.slider-container {
+  grid-area: butt;
+}
 /* slider reference: https://www.w3schools.com/howto/howto_css_switch.asp */
 /* The switch - the box around the slider */
 .switch {
@@ -91,7 +107,6 @@ div i {
   display: inline-block;
   width: 60px;
   height: 34px;
-  grid-area: button;
 }
 
 /* Hide default HTML checkbox */

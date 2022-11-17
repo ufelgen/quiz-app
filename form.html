@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/df46452064.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>New Quiz Card</h1>
+    </header>
+    <main data-js="main">
+      <section class="new-quiz-card">
+        <h3>Add your own questions!</h3>
+        <form data-js="new-quiz-card-form">
+          <fieldset class="your-input">
+            <legend>Question</legend>
+            <label for="your-question"
+              >please type your new question below</label
+            >
+            <textarea
+              id="your-question"
+              data-js="your-question"
+              rows="5"
+              name="question"
+              maxlength="150"
+            ></textarea>
+            <p data-js="question-characters">150 characters left</p>
+          </fieldset>
+          <fieldset class="your-input">
+            <legend>Answer</legend>
+            <label for="your-answer"
+              >please type the answer to your question below</label
+            >
+            <textarea
+              id="your-answer"
+              data-js="your-answer"
+              rows="5"
+              name="answer"
+              maxlength="150"
+            ></textarea>
+            <p data-js="answer-characters">150 characters left</p>
+          </fieldset>
+          <fieldset class="your-input">
+            <legend>Tag</legend>
+            <label for="your-tag"
+              >please select a tag to classify your question</label
+            >
+            <p>
+              <select name="tag" id="your-tag" data-js="your-tag">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+              </select>
+            </p>
+          </fieldset>
+          <button type="submit" data-js="create-button">
+            Create a new Quiz Card
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul type="none" class="navigation">
+        <li class="navigation__home">
+          <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="navigation__bookmark-page">
+          <a href="./bookmarks.html"><i class="fa-regular fa-bookmark"></i></a>
+        </li>
+        <li class="navigation__new-card navigation__current">
+          <a href="./form.html"><i class="fa-solid fa-square-plus"></i></a>
+        </li>
+        <li class="navigation__profile">
+          <a href="./profile.html">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

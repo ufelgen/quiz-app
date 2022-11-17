@@ -8,7 +8,7 @@
   font-family: Arial;
 }
 
-.quiz-card__tag {
+.quiz-card__tag-wrapper {
   display: flex;
   flex-flow: row wrap;
   gap: 7px;
@@ -18,10 +18,7 @@
   font-size: 1rem;
 }
 
-.quiz-card__tag-css,
-.quiz-card__tag-basics,
-.quiz-card__tag-js,
-.quiz-card__tag-html {
+.quiz-card__tag {
   border: 1px solid var(--green);
   padding: 3px;
   border-radius: 10%;
